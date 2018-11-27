@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const path = require('path')
 
+//express is used for HTTP server
 const app = express()
 const router = express.Router()
 
@@ -16,10 +17,13 @@ const router = express.Router()
 // require routes
 // const nameRoute = require('./routes/nameRoute)
 
+
+// bodyParser is a parser to request bodies on our requisitions routes
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
     extended: false
 }))
+// it will use a static page generated with react
 app.use(express.static(path.join(__dirname, "../../build")))
 
 //cors
