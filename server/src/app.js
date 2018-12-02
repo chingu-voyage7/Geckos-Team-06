@@ -9,10 +9,14 @@ const router = express.Router()
 
 // database configuration
 // ex:
-// const url = "mongodb://localhost:27017/name-database"
+const dbUrl = 'mongodb://localhost:27017/podcast-aggregator'
+
+mongoose.connect(dbUrl, { useNewUrlParser: true })
+    .then(() => console.log('connected to MongoDb'))
+    .catch(err => console.log('could not connect to MongoDb'))
 
 // require models
-// const nameModel = require('./models/nameModel')
+// const EpisodeModel = require('./models/episode')
 
 // require routes
 // const nameRoute = require('./routes/nameRoute)
