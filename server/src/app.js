@@ -16,7 +16,7 @@ mongoose.connect(dbUrl, { useNewUrlParser: true })
     .catch(err => console.log('could not connect to MongoDb'))
 
 // require models
-// const EpisodeModel = require('./models/episode')
+const EpisodeModel = require('./models/episode')
 
 // require routes
 // const nameRoute = require('./routes/nameRoute)
