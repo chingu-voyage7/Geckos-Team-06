@@ -12,7 +12,7 @@ const router = express.Router()
 // const url = "mongodb://localhost:27017/name-database"
 
 // require models
-// const nameModel = require('./models/nameModel')
+const User = require('./models/userModel')
 
 // require routes
 // const nameRoute = require('./routes/nameRoute)
