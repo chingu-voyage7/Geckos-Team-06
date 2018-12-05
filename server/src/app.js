@@ -22,6 +22,7 @@ mongoose
 // require models
 const EpisodeModel = require("./models/episodeModel");
 const UserModel = require("./models/userModel");
+const PodcastModel = require("./models/podcastModel");
 
 // require routes
 // const nameRoute = require('./routes/nameRoute)
