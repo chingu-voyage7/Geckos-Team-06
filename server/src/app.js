@@ -20,8 +20,8 @@ mongoose
   .catch(err => console.log("could not connect to MongoDb"));
 
 // require models
-const EpisodeModel = require("./models/episode");
-const User = require("./models/userModel");
+const EpisodeModel = require("./models/episodeModel");
+const UserModel = require("./models/userModel");
 
 // require routes
 // const nameRoute = require('./routes/nameRoute)

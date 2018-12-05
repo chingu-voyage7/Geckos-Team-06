@@ -1,6 +1,7 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const EpisodeSchema = new mongoose.Schema({
+const EpisodeSchema = new Schema({
   title: {
     type: String,
     required: true,
@@ -21,8 +22,6 @@ const EpisodeSchema = new mongoose.Schema({
   url: {
     type: String
   }
-})
+});
 
-const Episode = mongoose.model('Episode', EpisodeSchema)
-
-module.exports = Episode;
+module.exports = mongoose.model("Episode", EpisodeSchema);
