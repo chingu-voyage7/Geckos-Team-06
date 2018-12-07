@@ -7,8 +7,10 @@ class Login extends Component {
     super(props);
 
     this.state = {
-      login: "",
-      password: ""
+      user: {
+        login: "",
+        password: ""
+      }
     };
   }
   handleSubmit = event => {
