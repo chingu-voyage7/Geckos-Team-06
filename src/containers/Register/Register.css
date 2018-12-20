@@ -1,0 +1,21 @@
+@media (orientation: landscape) and (min-width: 500px) {
+  .form-wrapper {
+    max-width: 80%;
+    margin: 30px auto;
+  }
+
+  .fields {
+    display: flex;
+  }
+
+  .fields>div {
+    margin: 15px;
+    width: 100%;
+    border: 1px solid #bbb;
+    padding: 1.5rem 2rem; 
+  }
+
+  .fields input {
+    width: 85%;
+  }
+}
